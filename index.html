@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <h1>Form Registrasi</h1>
+    
+    <form>
+        <fieldset>
+            <legend>Biodata</legend>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama Mahasiswa:</label></td>
+                    <td><input type="text" id="nama" name="nama" placeholder="Nama Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">No Induk Mahasiswa (NIM):</label></td>
+                    <td><input type="number" id="nim" name="nim" placeholder="123456789"></td>
+                </tr>
+                <tr>
+                    <td><label for="alamat">Alamat Mahasiswa:</label></td>
+                    <td><textarea id="alamat" name="alamat" placeholder="Alamat Anda"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="tgl">Tanggal Lahir:</label></td>
+                    <td>
+                        <select id="tgl" name="tgl">
+                            <option value="01">01</option>
+                            
+                        </select>
+                        <select id="bulan" name="bulan">
+                            <option value="Januari">Januari</option>
+                            
+                        </select>
+                        <select id="tahun" name="tahun">
+                            <option value="1990">1990</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <input type="radio" id="pria" name="jk" value="Pria">
+                        <label for="pria">Pria</label>
+                        <input type="radio" id="wanita" name="jk" value="Wanita">
+                        <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="foto">Upload Foto:</label></td>
+                    <td><input type="file" id="foto" name="foto"></td>
+                </tr>
+                <tr>
+                    <td><label for="website">URL Website:</label></td>
+                    <td><input type="url" id="website" name="website" placeholder="URL Website Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="pt">Perguruan Tinggi:</label></td>
+                    <td><input type="text" id="pt" name="pt"></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Info Akun</legend>
+            <table>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Email Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" placeholder="Username Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Password Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="repeat-password">Ulangi Password:</label></td>
+                    <td><input type="password" id="repeat-password" name="repeat-password" placeholder="Password Anda"></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Kemampuan Dasar</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="html" name="skills" value="HTML">
+                        <label for="html">HTML</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="css" name="skills" value="CSS">
+                        <label for="css">CSS</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="javascript" name="skills" value="Javascript">
+                        <label for="javascript">Javascript</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="php" name="skills" value="PHP">
+                        <label for="php">PHP</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="mysql" name="skills" value="MySQL">
+                        <label for="mysql">MySQL</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="laravel" name="skills" value="Laravel">
+                        <label for="laravel">Laravel</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="react-native" name="skills" value="React Native">
+                        <label for="react-native">React Native</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <div style="margin-top: 10px;">
+            <button type="reset">Reset</button>
+            <button type="submit">Simpan</button>
+        </div>
+    </form>
+</body>
+</html>
